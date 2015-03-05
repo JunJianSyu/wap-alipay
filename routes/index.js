@@ -63,12 +63,15 @@ exports.alipayto = function (req, res) {
 
         var res_xml = "";
         var request = https.request(options, function (res) {
+            var body_str = '';
             res.setEncoding("utf-8");
             res.on("data", function (data) {
-                res_xml = data;
-                res_xml = decodeURIComponent(res_xml);
-                res_xmlss(res_xml);
+                body_str += data;
             });
+            res.on("end", function (){
+                res_xml = decodeURIComponent(body_str);
+                res_xmlss(res_xml);
+            })
         });
         request.on("error", function (err) {
             console.log(err);
