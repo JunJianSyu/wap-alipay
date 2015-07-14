@@ -28,7 +28,7 @@ var Pay_Config = {
 };
 ```
 
-###### 参数修改模板 alipay_conf.js
+###### 参数修改模板 route/index.js
 
 ```js
     //获取基本参数
