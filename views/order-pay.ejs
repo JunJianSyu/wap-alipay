@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alipay支付</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <style type="text/css">
+        .alipay-info {
+            margin: 15px auto;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="alipay-info">
+        <h4>Alipay Example</h4>
+        <pre>Author: JunJianSyu <br/>Email: junjian1992@gmail.com</pre>
+        <p>此例子需要在后台配置相关参数，才可支付成功。如果你觉得这个例子对你有用，请start一下.</p>
+        <i class="glyphicon glyphicon-star"></i>
+        <a href="https://github.com/JunJianSyu/wap-alipay">Alipay Example</a>
+    </div>
+
+    <div class="form-inline">
+        <div class="form-group">
+            <label class="sr-only" for="">Alipay example</label>
+
+            <div class="input-group">
+                <div class="input-group-addon">￥</div>
+                <input type="text" class="form-control" id="" placeholder="" value="0.01">
+
+                <div class="input-group-addon">元</div>
+            </div>
+        </div>
+        <a href="/order_pay" class="btn btn-primary">确认支付</a>
+    </div>
+</div>
+</body>
+</html>
